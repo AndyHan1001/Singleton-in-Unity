@@ -10,10 +10,10 @@ If you want the script of your own singleton class to be destroyed on switching 
 
 	public class YOURCLASS : MonoSingleton<YOURCLASS>
 	{
-			/// NOTE:
-    		/// 1. DO NOT write your own Awake() method in YOURCLASS.
-    		/// 2. Because of 1, if you want to do some initialization, DO NOT write code in Awake() method, OVERRIDE Init() method AND DO it in Init() method like BELOW.
-    		/// 3. If you really want to write your own Awake() method in YOURCLASS, then you should call Awake() method of the base class by writing code "base.Awake()" at the first line of your own Awake() method.
+		/// NOTE:
+    	/// 1. DO NOT write your own Awake() method in YOURCLASS.
+    	/// 2. Because of 1, if you want to do some initialization, DO NOT write code in Awake() method, OVERRIDE Init() method AND DO it in Init() method like BELOW.
+    	/// 3. If you really want to write your own Awake() method in YOURCLASS, then you should call Awake() method of the base class by writing code "base.Awake()" at the first line of your own Awake() method.
 		
 		protected override void Init()
 		{
@@ -37,10 +37,10 @@ If you want the script of your own singleton class to be kept on switching to an
 
 	public class YOURCLASS : AcrossSceneMonoSingleton<YOURCLASS>
 	{
-			/// NOTE:
-    		/// 1. DO NOT write your own Awake() method in YOURCLASS.
-    		/// 2. Because of 1, if you want to do some initialization, DO NOT write code in Awake() method, OVERRIDE Init() method AND DO it in Init() method like BELOW.
-    		/// 3. If you really want to write your own Awake() method in YOURCLASS, then you should call Awake() method of the base class by writing code "base.Awake()" at the first line of your own Awake() method.
+		/// NOTE:
+    	/// 1. DO NOT write your own Awake() method in YOURCLASS.
+    	/// 2. Because of 1, if you want to do some initialization, DO NOT write code in Awake() method, OVERRIDE Init() method AND DO it in Init() method like BELOW.
+    	/// 3. If you really want to write your own Awake() method in YOURCLASS, then you should call Awake() method of the base class by writing code "base.Awake()" at the first line of your own Awake() method.
 		
 		protected override void Init()
 		{
