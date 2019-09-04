@@ -1,5 +1,5 @@
 # Singleton in Unity
-####How To Use:
+#### How To Use:
 
 If you want to implement your own singleton class whose script can be attached to any Unity GameObject, then your own singleton class need to inherit from either "MonoSingleton&lt;T&gt;" class or "AcrossSceneMonoSingleton&lt;T&gt;" class.
 In order to use the classes mentioned above, you need to use the namespace called "GenericMonoSingleton".
